@@ -1,0 +1,17 @@
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\MealApplication.Service\bin\Debug\net6.0\MealApplication.Service.deps.json
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\MealApplication.Service\bin\Debug\net6.0\MealApplication.Service.dll
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\MealApplication.Service\bin\Debug\net6.0\MealApplication.Service.pdb
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\MealApplication.Service\bin\Debug\net6.0\RoomManageApplication.Common.dll
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\MealApplication.Service\bin\Debug\net6.0\RoomManageApplication.Data.dll
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\MealApplication.Service\bin\Debug\net6.0\RoomManageApplication.Common.pdb
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\MealApplication.Service\bin\Debug\net6.0\RoomManageApplication.Data.pdb
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\MealApplication.Service\obj\Debug\net6.0\MealApplication.Service.csproj.AssemblyReference.cache
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\MealApplication.Service\obj\Debug\net6.0\MealApplication.Service.GeneratedMSBuildEditorConfig.editorconfig
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\MealApplication.Service\obj\Debug\net6.0\MealApplication.Service.AssemblyInfoInputs.cache
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\MealApplication.Service\obj\Debug\net6.0\MealApplication.Service.AssemblyInfo.cs
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\MealApplication.Service\obj\Debug\net6.0\MealApplication.Service.csproj.CoreCompileInputs.cache
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\MealApplication.Service\obj\Debug\net6.0\MealApplication.Service.csproj.CopyComplete
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\MealApplication.Service\obj\Debug\net6.0\MealApplication.Service.dll
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\MealApplication.Service\obj\Debug\net6.0\refint\MealApplication.Service.dll
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\MealApplication.Service\obj\Debug\net6.0\MealApplication.Service.pdb
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\MealApplication.Service\obj\Debug\net6.0\ref\MealApplication.Service.dll

@@ -1,0 +1,12 @@
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Common\bin\Debug\net6.0\RoomManageApplication.Common.deps.json
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Common\bin\Debug\net6.0\RoomManageApplication.Common.dll
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Common\bin\Debug\net6.0\RoomManageApplication.Common.pdb
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Common\obj\Debug\net6.0\RoomManageApplication.Common.csproj.AssemblyReference.cache
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Common\obj\Debug\net6.0\RoomManageApplication.Common.GeneratedMSBuildEditorConfig.editorconfig
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Common\obj\Debug\net6.0\RoomManageApplication.Common.AssemblyInfoInputs.cache
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Common\obj\Debug\net6.0\RoomManageApplication.Common.AssemblyInfo.cs
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Common\obj\Debug\net6.0\RoomManageApplication.Common.csproj.CoreCompileInputs.cache
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Common\obj\Debug\net6.0\RoomManageApplication.Common.dll
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Common\obj\Debug\net6.0\refint\RoomManageApplication.Common.dll
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Common\obj\Debug\net6.0\RoomManageApplication.Common.pdb
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Common\obj\Debug\net6.0\ref\RoomManageApplication.Common.dll

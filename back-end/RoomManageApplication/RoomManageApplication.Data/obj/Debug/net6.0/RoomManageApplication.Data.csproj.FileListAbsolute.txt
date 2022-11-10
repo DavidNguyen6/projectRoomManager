@@ -1,0 +1,17 @@
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Data\bin\Debug\net6.0\RoomManageApplication.Data.deps.json
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Data\bin\Debug\net6.0\RoomManageApplication.Data.runtimeconfig.json
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Data\bin\Debug\net6.0\RoomManageApplication.Data.dll
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Data\bin\Debug\net6.0\RoomManageApplication.Data.pdb
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Data\bin\Debug\net6.0\RoomManageApplication.Common.dll
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Data\bin\Debug\net6.0\RoomManageApplication.Common.pdb
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Data\obj\Debug\net6.0\RoomManageApplication.Data.csproj.AssemblyReference.cache
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Data\obj\Debug\net6.0\RoomManageApplication.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Data\obj\Debug\net6.0\RoomManageApplication.Data.AssemblyInfoInputs.cache
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Data\obj\Debug\net6.0\RoomManageApplication.Data.AssemblyInfo.cs
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Data\obj\Debug\net6.0\RoomManageApplication.Data.csproj.CoreCompileInputs.cache
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Data\obj\Debug\net6.0\RoomManageApplication.Data.csproj.CopyComplete
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Data\obj\Debug\net6.0\RoomManageApplication.Data.dll
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Data\obj\Debug\net6.0\refint\RoomManageApplication.Data.dll
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Data\obj\Debug\net6.0\RoomManageApplication.Data.pdb
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Data\obj\Debug\net6.0\RoomManageApplication.Data.genruntimeconfig.cache
+E:\ProjectHandMake\ProjectPractical\RoomManage\projectRoomManager\back-end\RoomManageApplication\RoomManageApplication.Data\obj\Debug\net6.0\ref\RoomManageApplication.Data.dll

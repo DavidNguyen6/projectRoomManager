@@ -6,4 +6,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.4.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RoomManageApplication.Common\RoomManageApplication.Common.csproj" />
+    <ProjectReference Include="..\RoomManageApplication.Data\RoomManageApplication.Data.csproj" />
+  </ItemGroup>
+
 </Project>
