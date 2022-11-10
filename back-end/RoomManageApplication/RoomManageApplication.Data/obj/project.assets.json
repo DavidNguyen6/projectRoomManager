@@ -2241,6 +2241,7 @@
       "msbuildProject": "../RoomManageApplication.Common/RoomManageApplication.Common.csproj"
     }
   },
+  "libraries": {},
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.EntityFrameworkCore >= 6.0.10",

@@ -2205,6 +2205,7 @@
       "msbuildProject": "../RoomManageApplication.Data/RoomManageApplication.Data.csproj"
     }
   },
+  "libraries": {},
   "projectFileDependencyGroups": {
     "net6.0": [
       "Autofac >= 6.4.0",
