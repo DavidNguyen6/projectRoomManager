@@ -14,20 +14,16 @@ const RoomSchema = new Schema({
   },
 
   priceRoom: {
-    type: String,
+    type: Number,
   },
 
   statusRoom: {
     type: Boolean,
   },
-
+  
   lineId: {
-    type: String,
-  },
-
-  id: {
-    type: Number,
-  },
+    type : String
+  }
 });
 
 module.exports = mongoose.model("rooms", RoomSchema);

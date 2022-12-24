@@ -11,6 +11,9 @@ import TextField from "@mui/material/TextField";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
+import { Box } from "@mui/material";
+
+const listMonth = ["Tháng một", "Tháng hai", "Tháng ba", "Tháng tư", "Tháng năm", "Tháng sáu", "Tháng bảy", "Tháng tám", "Tháng chín", "Tháng mười", "Tháng mười một", "Tháng mười hai"];
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -18,18 +21,26 @@ const useStyles = makeStyles((theme: Theme) =>
       display: "flex",
       margin: "10px",
       flexDirection: "column",
-      minWidth: "200px"
+      minWidth: "200px",
     },
 
     gridContainer: {
       marginTop: "20px",
     },
-    selectContainer: {},
+    selectContainer: {
+
+    },
 
     wrapperWater: {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
+    },
+
+    wrappterCustomer: {
+      display: "grid",
+      "grid-template-columns": "300px 300px",
+      "gap": "10px"
     },
 
     wrapperElectric: {
@@ -59,9 +70,11 @@ const RegistrationRoom = () => {
 
   return (
     <div className={classes.inputContainer}>
-      <div className={classes.selectContainer}>
+      <h1>Tính tiền phòng</h1>
+
+      <div className={classes.wrappterCustomer}>
         <FormControl sx={{ m: 0, minWidth: 120, marginRight: 5 }}>
-          <InputLabel id="demo-select-small">Phòng</InputLabel>
+          <InputLabel id="demo-select-small">Tháng</InputLabel>
           <Select
             labelId="demo-select-small"
             id="demo-select-small"
@@ -69,18 +82,9 @@ const RegistrationRoom = () => {
             label=""
             onChange={handleChange}
           >
-            <MenuItem value={1}>Tháng 1</MenuItem>
-            <MenuItem value={2}>Tháng 2</MenuItem>
-            <MenuItem value={3}>Tháng 3</MenuItem>
-            <MenuItem value={4}>Tháng 4</MenuItem>
-            <MenuItem value={5}>Tháng 5</MenuItem>
-            <MenuItem value={6}>Tháng 6</MenuItem>
-            <MenuItem value={7}>Tháng 7</MenuItem>
-            <MenuItem value={8}>Tháng 8</MenuItem>
-            <MenuItem value={9}>Tháng 9</MenuItem>
-            <MenuItem value={10}>Tháng 10</MenuItem>
-            <MenuItem value={11}>Tháng 11</MenuItem>
-            <MenuItem value={12}>Tháng 12</MenuItem>
+            {listMonth.map((mouth) =>
+            <MenuItem value={mouth}>{mouth}</MenuItem>
+            )}
           </Select>
         </FormControl>
 
@@ -94,32 +98,156 @@ const RegistrationRoom = () => {
             renderInput={params => <TextField {...params} />}
           />
         </LocalizationProvider>
+
+        <Box sx={{ minWidth: 120, marginTop: 2 }}>
+          <FormControl fullWidth>
+            <InputLabel id="demo-simple-select-label">Phòng</InputLabel>
+            <Select
+              labelId="demo-simple-select-label"
+              id="demo-simple-select"
+              value={age}
+              label="Age"
+              onChange={handleChange}
+            >
+              <MenuItem value={10}>Ten</MenuItem>
+              <MenuItem value={20}>Twenty</MenuItem>
+              <MenuItem value={30}>Thirty</MenuItem>
+            </Select>
+          </FormControl>
+        </Box>
+
+        <Box sx={{ minWidth: 120, marginTop: 2 }}>
+          <FormControl fullWidth>
+            <InputLabel id="demo-simple-select-label">
+              Tên người thuê
+            </InputLabel>
+            <Select
+              labelId="demo-simple-select-label"
+              id="demo-simple-select"
+              value={age}
+              label="Age"
+              onChange={handleChange}
+            >
+              <MenuItem value={10}>Ten</MenuItem>
+              <MenuItem value={20}>Twenty</MenuItem>
+              <MenuItem value={30}>Thirty</MenuItem>
+            </Select>
+          </FormControl>
+        </Box>
       </div>
 
-      <TextField
-        label="Tên phòng"
-        variant="outlined"
-        id="username"
-        type="email"
-        placeholder="Vui lòng nhập tên phòng"
-        margin="normal"
-        size="small"
-        onChange={handleUsernameChange}
-        onKeyPress={handleKeyPress}
-      />
+      <div className={classes.wrappterCustomer}>
+        <TextField
+          label="Tên phòng"
+          variant="outlined"
+          id="outlined-disabled"
+          type="email"
+          disabled
+          placeholder="Vui lòng nhập tên phòng"
+          margin="normal"
+          size="small"
+          onChange={handleUsernameChange}
+          onKeyPress={handleKeyPress}
+        />
 
-      <TextField
-        id="password"
-        type="password"
-        size="small"
-        label="Giá phòng"
-        placeholder="Vui lòng nhập giá phòng"
-        margin="normal"
-        variant="outlined"
-        onChange={handlePasswordChange}
-        onKeyPress={handleKeyPress}
-      />
+        <TextField
+          id="password"
+          type="password"
+          size="small"
+          label="Giá phòng"
+          disabled
+          placeholder="Vui lòng nhập giá phòng"
+          margin="normal"
+          variant="outlined"
+          onChange={handlePasswordChange}
+          onKeyPress={handleKeyPress}
+        />
 
+        <TextField
+          id="password"
+          type="password"
+          size="small"
+          label="Địa chỉ"
+          disabled
+          margin="normal"
+          variant="outlined"
+          onChange={handlePasswordChange}
+          onKeyPress={handleKeyPress}
+        />
+
+        <TextField
+          id="password"
+          type="password"
+          size="small"
+          label="CMND"
+          disabled
+          margin="normal"
+          variant="outlined"
+          onChange={handlePasswordChange}
+          onKeyPress={handleKeyPress}
+        />
+
+        <TextField
+          id="password"
+          type="password"
+          size="small"
+          label="Số điện thoại"
+          disabled
+          margin="normal"
+          variant="outlined"
+          onChange={handlePasswordChange}
+          onKeyPress={handleKeyPress}
+        />
+
+        <TextField
+          id="password"
+          type="password"
+          size="small"
+          label="Số điện thoại"
+          disabled
+          margin="normal"
+          variant="outlined"
+          onChange={handlePasswordChange}
+          onKeyPress={handleKeyPress}
+        />
+
+        <TextField
+          id="password"
+          type="password"
+          size="small"
+          label="tài khoản đăng nhập"
+          disabled
+          margin="normal"
+          variant="outlined"
+          onChange={handlePasswordChange}
+          onKeyPress={handleKeyPress}
+        />
+
+        <TextField
+          id="password"
+          type="password"
+          size="small"
+          label="Mật khẩu"
+          disabled
+          margin="normal"
+          variant="outlined"
+          onChange={handlePasswordChange}
+          onKeyPress={handleKeyPress}
+        />
+
+        <TextField
+          id="password"
+          type="password"
+          size="small"
+          label="Trạng thái phòng thuê"
+          disabled
+          margin="normal"
+          variant="outlined"
+          onChange={handlePasswordChange}
+          onKeyPress={handleKeyPress}
+        />
+      </div>
+      
       <div className={classes.wrapperWater}>
         <TextField
           id="password"
@@ -192,14 +320,14 @@ const RegistrationRoom = () => {
         <div>&ensp; = &ensp; </div>
 
         <TextField
-        disabled
-        id="filled-disabled"
-        defaultValue="0"
-        variant="filled"
-        label="Tổng số điện"
-        margin="normal"
-        onChange={handlePasswordChange}
-        onKeyPress={handleKeyPress}
+          disabled
+          id="filled-disabled"
+          defaultValue="0"
+          variant="filled"
+          label="Tổng số điện"
+          margin="normal"
+          onChange={handlePasswordChange}
+          onKeyPress={handleKeyPress}
         />
       </div>
 

@@ -1,12 +1,3 @@
-// const { books, authors } = require("../data/static");
-const Author = require("../models/Author");
-const Book = require("../models/Book");
-const Room = require("../models/Room");
-const Customer = require("../models/Customer");
-const LineRoom = require("../models/LineRoom");
-const Account = require("../models/Account");
-const CustomerRoom = require("../models/CustomerRoom");
-
 const resolvers = {
   /* Start Query */
   Query: {
@@ -19,20 +10,39 @@ const resolvers = {
     authors: async (parent, args, { mogoDataMethods }) =>
       await mogoDataMethods.getAllAuthors(),
 
-    author: async (parent, { id }, { mogoDataMethods }) => 
+    author: async (parent, { id }, { mogoDataMethods }) =>
       await mogoDataMethods.getAuthorById(id),
+
+    bills: async (parent, args, { mogoDataMethods }) =>
+      await mogoDataMethods.getAllBills(),
+
+    bill: async (parent, { id }, { mogoDataMethods }) =>
+      await mogoDataMethods.getBillById(id),
 
     rooms: async (parent, args, { mogoDataMethods }) =>
       await mogoDataMethods.getAllRooms(),
 
     room: async (parent, { id }, { mogoDataMethods }) =>
       await mogoDataMethods.getRoomById(id),
+
+    lines: async (parent, args, { mogoDataMethods }) =>
+      await mogoDataMethods.getAllLine(),
+
+    line: async (parent, { id }, { mogoDataMethods }) =>
+      await mogoDataMethods.getLineById(id),
+
+    customers: async (parent, args, { mogoDataMethods }) =>
+      await mogoDataMethods.getAllCustomers(),
+
+    customer: async (parent, { id }, { mogoDataMethods }) =>
+      await mogoDataMethods.getCustomerById(id),
   },
 
   //nếu muốn sự lý join các bản thì nên làm vd như Book có thêm thuôc tính của Author
   // Tìm sách dựa theo id
   Book: {
-    author: async ({ authorId }, args, { mogoDataMethods }) => await mogoDataMethods.getAuthorById(authorId),
+    author: async ({ authorId }, args, { mogoDataMethods }) =>
+      await mogoDataMethods.getAuthorById(authorId),
   },
 
   /*
@@ -63,6 +73,19 @@ const resolvers = {
       await mogoDataMethods.getAllBooks({ authorId: id }),
   },
 
+  Room: {
+    line: async ({ lineId }, args, { mogoDataMethods }) =>
+      await mogoDataMethods.getLineById(lineId),
+  },
+
+  Bill: {
+    room: async ({ roomId }, args, { mogoDataMethods }) =>
+      await mogoDataMethods.getRoomById(roomId),
+    
+    customer: async ({ customerId }, args, { mogoDataMethods }) =>
+      await mogoDataMethods.getCustomerById(customerId)
+  },
+
   /* End Query */
 
   /* Start MUTATION */
@@ -79,9 +102,21 @@ const resolvers = {
       return await mogoDataMethods.createRoom(args);
     },
 
-    deleteRoom: async ({ id }, args, { mogoDataMethods }) => {
-      return await mogoDataMethods.deleteRoom(id);
+    createLine: async (parent, args, { mogoDataMethods }) => {
+      return await mogoDataMethods.CreateLine(args);
     },
+
+    createBill: async (parent, args, { mogoDataMethods }) => {
+      return await mogoDataMethods.createBill(args);
+    },
+
+    createCustomer: async (parent, args, { mogoDataMethods }) => {
+      return await mogoDataMethods.createCustomer(args);
+    },
+
+    // deleteRoom: async ({ id }, args, { mogoDataMethods }) => {
+    //   return await mogoDataMethods.deleteRoom(id);
+    // },
   },
   /* End MUTATION */
 };

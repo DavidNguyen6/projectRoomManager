@@ -9,10 +9,6 @@ const AccountSchema = new Schema({
   username: {
     type : Number
   },
-
-  id: {
-    type: Number,
-  },
 })
 
 module.exports = mongoose.model('account', AccountSchema)

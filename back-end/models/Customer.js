@@ -22,11 +22,7 @@ const CustomerSchema = new Schema({
   },
 
   startContract: {
-    type: Date,
-  },
-
-  id: {
-    type: Number,
+    type: String,
   },
 });
 

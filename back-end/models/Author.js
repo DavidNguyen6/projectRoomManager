@@ -7,10 +7,7 @@ const AuthorSchema = new Schema({
   },
   age: {
     type : Number
-  },
-  id: {
-    type: Number,
-  },
+  }
 })
 
 module.exports = mongoose.model('authors', AuthorSchema)
