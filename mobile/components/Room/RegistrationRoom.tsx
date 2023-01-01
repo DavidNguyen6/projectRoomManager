@@ -103,7 +103,7 @@ const RegistrationRoom = () => {
 
         <LocalizationProvider dateAdapter={AdapterDayjs}>
           <DatePicker
-            label="Ngày/tháng/năm"
+            label="Thời gian"
             value={value}
             onChange={newValue => {
               setValue(newValue);

@@ -136,7 +136,6 @@ const GridRoom = ({ listData }: any) => {
         "password": item.customer.password,
 
       });
-      console.log("formatDataFromGraph", formatDataFromGraph);
   });
   return (
     <Box sx={{ height: 400, width: "100%", margin: 5 }}>

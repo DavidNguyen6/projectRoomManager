@@ -28,7 +28,7 @@ const RoomManager = () => {
 
   return (
     <div className={classes.container}>
-      <RegistrationRoom/>
+      <RegistrationRoom listData={data}/>
       <ListBtnService/>
       <Calculator/>
       <GridRoom listData={data}/>

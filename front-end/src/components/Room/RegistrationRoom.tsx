@@ -55,14 +55,24 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const RegistrationRoom = () => {
+const RegistrationRoom = ({ listData }: any) => {
   const classes = useStyles();
-  const handleLogin = async () => {};
-  const handleUsernameChange = async () => {};
-  const handlePasswordChange = async () => {};
-  const handleKeyPress = async () => {};
   const [age, setAge] = React.useState("vui lòng chọn phòng");
-
+  const [month, setMonth] = React.useState("Tháng 1");
+  const [room, setRoom] = React.useState("");
+  console.log("listData", listData.rooms);
+  
+  const handleLogin = async () => {};
+  const handleMonthChange = async ({ target }: any ) => {
+    console.log("rteddd", target.value);
+    setMonth(target.value);
+  };
+  const handlePasswordChange = async () => {};
+  const handleUsernameChange = async () => {};
+  const handleKeyPress = async () => {};
+  const handleRoomChange = async ( { target }: any ) => {
+  setRoom(target.value);
+  };
   const handleChange = (event: SelectChangeEvent) => {
     setAge(event.target.value);
   };
@@ -78,9 +88,9 @@ const RegistrationRoom = () => {
           <Select
             labelId="demo-select-small"
             id="demo-select-small"
-            value={age}
-            label=""
-            onChange={handleChange}
+            value={month}
+            label="Tháng"
+            onChange={handleMonthChange}
           >
             {listMonth.map((mouth) =>
             <MenuItem value={mouth}>{mouth}</MenuItem>
@@ -90,7 +100,7 @@ const RegistrationRoom = () => {
 
         <LocalizationProvider dateAdapter={AdapterDayjs}>
           <DatePicker
-            label="Ngày/tháng/năm"
+            label="Thời gian"
             value={value}
             onChange={newValue => {
               setValue(newValue);
@@ -105,13 +115,13 @@ const RegistrationRoom = () => {
             <Select
               labelId="demo-simple-select-label"
               id="demo-simple-select"
-              value={age}
-              label="Age"
-              onChange={handleChange}
+              value={room}
+              label="Phòng"
+              onChange={handleRoomChange}
             >
-              <MenuItem value={10}>Ten</MenuItem>
-              <MenuItem value={20}>Twenty</MenuItem>
-              <MenuItem value={30}>Thirty</MenuItem>
+              {listData.rooms.map((val: any) =>
+                <MenuItem value={val.id}>{val.nameRoom}</MenuItem>
+              )}
             </Select>
           </FormControl>
         </Box>
