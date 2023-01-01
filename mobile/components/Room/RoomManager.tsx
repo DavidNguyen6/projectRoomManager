@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme: Theme) =>
 const RoomManager = () => {
   const classes = useStyles();
   const { loading, error, data } = useQuery(getAllDataFromBE);
-  console.log("data", data);
+  // console.log("data", data);
   
   if ( loading ) return <p> Loading rooms ...</p>
   if ( error ) return <p> Error loading </p>

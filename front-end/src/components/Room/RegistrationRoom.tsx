@@ -60,7 +60,7 @@ const RegistrationRoom = ({ listData }: any) => {
   const [age, setAge] = React.useState("vui lòng chọn phòng");
   const [month, setMonth] = React.useState("Tháng 1");
   const [room, setRoom] = React.useState("");
-  console.log("listData", listData.rooms);
+  // console.log("listData", listData.rooms);
   
   const handleLogin = async () => {};
   const handleMonthChange = async ({ target }: any ) => {
@@ -100,7 +100,7 @@ const RegistrationRoom = ({ listData }: any) => {
 
         <LocalizationProvider dateAdapter={AdapterDayjs}>
           <DatePicker
-            label="Thời gian"
+            label="Ngày thuê"
             value={value}
             onChange={newValue => {
               setValue(newValue);
@@ -152,7 +152,7 @@ const RegistrationRoom = ({ listData }: any) => {
           variant="outlined"
           id="outlined-disabled"
           type="email"
-          disabled
+          // disabled
           placeholder="Vui lòng nhập tên phòng"
           margin="normal"
           size="small"
@@ -165,7 +165,7 @@ const RegistrationRoom = ({ listData }: any) => {
           type="password"
           size="small"
           label="Giá phòng"
-          disabled
+          // disabled
           placeholder="Vui lòng nhập giá phòng"
           margin="normal"
           variant="outlined"
@@ -178,7 +178,7 @@ const RegistrationRoom = ({ listData }: any) => {
           type="password"
           size="small"
           label="Địa chỉ"
-          disabled
+          // disabled
           margin="normal"
           variant="outlined"
           onChange={handlePasswordChange}
@@ -190,7 +190,7 @@ const RegistrationRoom = ({ listData }: any) => {
           type="password"
           size="small"
           label="CMND"
-          disabled
+          // disabled
           margin="normal"
           variant="outlined"
           onChange={handlePasswordChange}
@@ -202,7 +202,7 @@ const RegistrationRoom = ({ listData }: any) => {
           type="password"
           size="small"
           label="Số điện thoại"
-          disabled
+          // disabled
           margin="normal"
           variant="outlined"
           onChange={handlePasswordChange}
@@ -214,7 +214,7 @@ const RegistrationRoom = ({ listData }: any) => {
           type="password"
           size="small"
           label="Số điện thoại"
-          disabled
+          // disabled
           margin="normal"
           variant="outlined"
           onChange={handlePasswordChange}
@@ -226,7 +226,7 @@ const RegistrationRoom = ({ listData }: any) => {
           type="password"
           size="small"
           label="tài khoản đăng nhập"
-          disabled
+          // disabled
           margin="normal"
           variant="outlined"
           onChange={handlePasswordChange}
@@ -238,7 +238,7 @@ const RegistrationRoom = ({ listData }: any) => {
           type="password"
           size="small"
           label="Mật khẩu"
-          disabled
+          // disabled
           margin="normal"
           variant="outlined"
           onChange={handlePasswordChange}
@@ -250,7 +250,7 @@ const RegistrationRoom = ({ listData }: any) => {
           type="password"
           size="small"
           label="Trạng thái phòng thuê"
-          disabled
+          // disabled
           margin="normal"
           variant="outlined"
           onChange={handlePasswordChange}
