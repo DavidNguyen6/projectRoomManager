@@ -60,7 +60,8 @@ const RegistrationRoom = ({ listData }: any) => {
   const [age, setAge] = React.useState("vui lòng chọn phòng");
   const [month, setMonth] = React.useState("Tháng 1");
   const [room, setRoom] = React.useState("");
-  // console.log("listData", listData.rooms);
+  const [infoListRoom, setInfoListRoom] = React.useState([]);
+  console.log("listData room", listData.rooms);
   
   const handleLogin = async () => {};
   const handleMonthChange = async ({ target }: any ) => {
@@ -71,11 +72,18 @@ const RegistrationRoom = ({ listData }: any) => {
   const handleUsernameChange = async () => {};
   const handleKeyPress = async () => {};
   const handleRoomChange = async ( { target }: any ) => {
-  setRoom(target.value);
+    console.log('target', target);
+    setRoom(target.value);
+    if(listData.rooms.length > 0 && target.value != '') {
+      const dataChoseRoom = listData.rooms.filter((item: any) => item.id === target.value);
+      setInfoListRoom(dataChoseRoom);
+    }
   };
+  console.log("infoListRoom", infoListRoom);
   const handleChange = (event: SelectChangeEvent) => {
     setAge(event.target.value);
   };
+
   const [value, setValue] = React.useState<Dayjs | null>(null);
 
   return (
@@ -148,29 +156,25 @@ const RegistrationRoom = ({ listData }: any) => {
 
       <div className={classes.wrappterCustomer}>
         <TextField
-          label="Tên phòng"
+          label=""
           variant="outlined"
           id="outlined-disabled"
           type="email"
-          // disabled
-          placeholder="Vui lòng nhập tên phòng"
+          disabled
+          placeholder="Tên phòng"
           margin="normal"
           size="small"
-          onChange={handleUsernameChange}
-          onKeyPress={handleKeyPress}
+          value={infoListRoom?.[0]?.['nameRoom']}
         />
 
         <TextField
-          id="password"
-          type="password"
           size="small"
-          label="Giá phòng"
-          // disabled
-          placeholder="Vui lòng nhập giá phòng"
+          label=""
+          disabled
+          placeholder="Giá phòng"
           margin="normal"
           variant="outlined"
-          onChange={handlePasswordChange}
-          onKeyPress={handleKeyPress}
+          value={infoListRoom?.[0]?.['priceRoom']}
         />
 
         <TextField
@@ -178,7 +182,7 @@ const RegistrationRoom = ({ listData }: any) => {
           type="password"
           size="small"
           label="Địa chỉ"
-          // disabled
+          disabled
           margin="normal"
           variant="outlined"
           onChange={handlePasswordChange}
@@ -190,7 +194,7 @@ const RegistrationRoom = ({ listData }: any) => {
           type="password"
           size="small"
           label="CMND"
-          // disabled
+          disabled
           margin="normal"
           variant="outlined"
           onChange={handlePasswordChange}
@@ -202,7 +206,7 @@ const RegistrationRoom = ({ listData }: any) => {
           type="password"
           size="small"
           label="Số điện thoại"
-          // disabled
+          disabled
           margin="normal"
           variant="outlined"
           onChange={handlePasswordChange}
@@ -214,7 +218,7 @@ const RegistrationRoom = ({ listData }: any) => {
           type="password"
           size="small"
           label="Số điện thoại"
-          // disabled
+          disabled
           margin="normal"
           variant="outlined"
           onChange={handlePasswordChange}
@@ -226,7 +230,7 @@ const RegistrationRoom = ({ listData }: any) => {
           type="password"
           size="small"
           label="tài khoản đăng nhập"
-          // disabled
+          disabled
           margin="normal"
           variant="outlined"
           onChange={handlePasswordChange}
@@ -238,7 +242,7 @@ const RegistrationRoom = ({ listData }: any) => {
           type="password"
           size="small"
           label="Mật khẩu"
-          // disabled
+          disabled
           margin="normal"
           variant="outlined"
           onChange={handlePasswordChange}
@@ -250,7 +254,7 @@ const RegistrationRoom = ({ listData }: any) => {
           type="password"
           size="small"
           label="Trạng thái phòng thuê"
-          // disabled
+          disabled
           margin="normal"
           variant="outlined"
           onChange={handlePasswordChange}
